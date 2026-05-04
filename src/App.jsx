@@ -778,7 +778,7 @@ export default function NewConstructionVault() {
       <section className="relative grain max-w-7xl mx-auto px-6 pt-20 pb-16 sm:pt-28 sm:pb-20">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs uppercase tracking-widest mb-8" style={{ background: 'rgba(212,175,55,0.08)', border: '1px solid rgba(212,175,55,0.25)', color: '#D4AF37', letterSpacing: '0.18em' }}>
-            <span className="w-1.5 h-1.5 rounded-full pulse-gold bg-gold" /> Updated weekly · April 2026
+            <span className="w-1.5 h-1.5 rounded-full pulse-gold bg-gold" /> Last updated · May 2026
           </div>
           <h1 className="font-display text-5xl sm:text-7xl leading-[1.05] mb-6 fade-up" style={{ fontWeight: 400 }}>
             The Columbus<br />
