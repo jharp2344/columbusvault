@@ -8,7 +8,7 @@ const SCHEDULER_URL = 'https://scheduler.zoom.us/jon-harp/new-build-consultation
 // Embedded as base64 for self-contained preview. For production, the dev should
 // save the logo as /public/logo-expert-partners.png and change this to "/logo-expert-partners.png".
 const LOGO_SRC = "data:image/webp;base64,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";
-import { MapPin, TrendingDown, Award, X, Check, ChevronRight, Filter, Building2, Zap, ArrowRight, Phone } from 'lucide-react';
+import { MapPin, TrendingDown, Award, X, Check, ChevronRight, Filter, Building2, Zap, ArrowRight, Phone, Calculator, DollarSign } from 'lucide-react';
 
 // ============================================================================
 // THE VAULT: Builder & Community Database
@@ -625,6 +625,107 @@ export default function NewConstructionVault() {
   const [showHighIntentPopup, setShowHighIntentPopup] = useState(false);
   const [popupShown, setPopupShown] = useState(false);
 
+  // === MORTGAGE CALCULATOR ===
+  // Full-feature mortgage comparison: builder buydown vs. existing-home rate
+  // including taxes, insurance, HOA, PMI, and cumulative savings at 5/10/20/30 years.
+  const [calcPrice, setCalcPrice] = useState(500000);
+  const [calcDownPct, setCalcDownPct] = useState(20);
+  const [calcLoanTerm, setCalcLoanTerm] = useState(30); // 30 or 15 years
+  const [calcTaxRate, setCalcTaxRate] = useState('1.5');     // % per year
+  const [calcInsurance, setCalcInsurance] = useState('1500'); // $ per year
+  const [calcHOA, setCalcHOA] = useState('0');               // $ per month
+  const [calcRateBuilder, setCalcRateBuilder] = useState('');
+  const [calcRateExisting, setCalcRateExisting] = useState('');
+
+  const calcResults = useMemo(() => {
+    const downPayment = (calcPrice * calcDownPct) / 100;
+    const loanAmount = calcPrice - downPayment;
+    const months = calcLoanTerm * 12;
+
+    // Parse string inputs as floats; fall back to 0 if blank/invalid
+    const taxPct = parseFloat(calcTaxRate) || 0;
+    const insuranceYr = parseFloat(calcInsurance) || 0;
+    const hoaMo = parseFloat(calcHOA) || 0;
+
+    // PMI: 0.5% of loan amount per year, divided by 12 — applies when down < 20%
+    const pmiMonthly = calcDownPct < 20 ? (loanAmount * 0.005) / 12 : 0;
+
+    // Monthly tax & insurance
+    const taxMonthly = (calcPrice * (taxPct / 100)) / 12;
+    const insuranceMonthly = insuranceYr / 12;
+
+    // Principal & interest calculator for a given annual rate %
+    function principalInterest(annualRatePct) {
+      const r = parseFloat(annualRatePct);
+      if (isNaN(r) || r <= 0) return null;
+      const monthlyRate = r / 100 / 12;
+      // Edge case: rate is 0 — straight division
+      if (monthlyRate === 0) return loanAmount / months;
+      return (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months)) /
+             (Math.pow(1 + monthlyRate, months) - 1);
+    }
+
+    const builderPI = principalInterest(calcRateBuilder);
+    const existingPI = principalInterest(calcRateExisting);
+
+    // Build full breakdown for each scenario
+    function breakdown(pi) {
+      if (pi === null) return null;
+      const total = pi + taxMonthly + insuranceMonthly + pmiMonthly + hoaMo;
+      const totalInterest = (pi * months) - loanAmount;
+      return {
+        pi,
+        taxMonthly,
+        insuranceMonthly,
+        pmiMonthly,
+        hoaMonthly: hoaMo,
+        totalMonthly: total,
+        totalInterest,
+      };
+    }
+
+    const builder = breakdown(builderPI);
+    const existing = breakdown(existingPI);
+
+    // Savings calculations (only when both rates entered)
+    let monthlySavings = null;
+    let savings5yr = null, savings10yr = null, savings20yr = null, savings30yr = null;
+
+    if (builder && existing) {
+      // Monthly savings = difference in P&I (other costs are identical)
+      monthlySavings = existing.pi - builder.pi;
+
+      // Cumulative savings at year markers
+      // For each year: cumulative savings = (existing P&I - builder P&I) × months elapsed
+      // BUT only count up to the loan term (can't save past loan end)
+      const yrTotal = (yr) => {
+        const elapsedMonths = Math.min(yr * 12, months);
+        return monthlySavings * elapsedMonths;
+      };
+      savings5yr = yrTotal(5);
+      savings10yr = yrTotal(10);
+      savings20yr = yrTotal(20);
+      savings30yr = yrTotal(calcLoanTerm); // full loan life
+    }
+
+    return {
+      downPayment, loanAmount, months,
+      taxMonthly, insuranceMonthly, pmiMonthly, hoaMonthly: hoaMo,
+      builder, existing,
+      monthlySavings,
+      savings5yr, savings10yr, savings20yr, savings30yr,
+    };
+  }, [calcPrice, calcDownPct, calcLoanTerm, calcTaxRate, calcInsurance, calcHOA, calcRateBuilder, calcRateExisting]);
+
+  // Currency formatter — used throughout the calculator section
+  const fmtMoney = useCallback((n) => {
+    if (n === null || n === undefined || isNaN(n)) return '—';
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency', currency: 'USD', maximumFractionDigits: 0,
+    }).format(n);
+  }, []);
+  // === END CALCULATOR ===
+
   // On mount: increment visit counter, check whether popup was already shown this visit
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -758,19 +859,35 @@ export default function NewConstructionVault() {
           .fade-up { animation: none; opacity: 1; }
           .pulse-gold { animation: none; }
         }
+        /* Custom slider styling — matches dark/gold theme */
+        .calc-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.1); outline: none; cursor: pointer; }
+        .calc-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%; background: #D4AF37; border: 2px solid #0A0A0B; cursor: grab; box-shadow: 0 2px 8px rgba(212,175,55,0.4); transition: transform 0.1s ease; }
+        .calc-slider::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.1); }
+        .calc-slider::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #D4AF37; border: 2px solid #0A0A0B; cursor: grab; box-shadow: 0 2px 8px rgba(212,175,55,0.4); }
+        .calc-slider:focus { outline: 2px solid rgba(212,175,55,0.4); outline-offset: 4px; }
+        /* Hide number input spinners on rate fields — cleaner look */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
       `}</style>
 
       {/* Top bar */}
       <div className="border-b" style={{ borderColor: 'rgba(212,175,55,0.15)' }}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <a href="#" className="flex items-center" aria-label="Expert Partners | eXp Realty">
             <img src={LOGO_SRC} alt="Expert Partners · eXp Realty · Marion · Columbus · Newark" className="h-11 sm:h-12 w-auto" />
           </a>
-          <a href="https://scheduler.zoom.us/jon-harp/new-build-consultation" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:gold transition-colors" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">Schedule a 15-min call</span>
-            <span className="sm:hidden">Book a call</span>
-          </a>
+          <div className="flex items-center gap-5 sm:gap-7">
+            <a href="#calculator" className="text-sm hover:gold transition-colors" style={{ color: 'rgba(255,255,255,0.7)' }}>
+              <Calculator className="w-4 h-4 inline-block mr-1.5 align-[-2px]" />
+              <span className="hidden sm:inline">Calculator</span>
+            </a>
+            <a href="https://scheduler.zoom.us/jon-harp/new-build-consultation" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:gold transition-colors" style={{ color: 'rgba(255,255,255,0.7)' }}>
+              <Phone className="w-4 h-4" />
+              <span className="hidden sm:inline">Schedule a 15-min call</span>
+              <span className="sm:hidden">Book a call</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -815,6 +932,7 @@ export default function NewConstructionVault() {
           ))}
         </div>
       </section>
+
 
       {/* Employer selector */}
       <section id="employers" className="max-w-7xl mx-auto px-6 pt-16 pb-4">
@@ -909,6 +1027,340 @@ export default function NewConstructionVault() {
           </div>
         )}
       </section>
+
+      {/* === MORTGAGE CALCULATOR === */}
+      {/* Editorial-style mortgage comparison: builder buydown vs. existing-home rate.
+          Buyer inputs both rates plus tax/insurance/HOA. Calculator shows full monthly
+          breakdown for each, plus cumulative savings at 5/10/20/30 years. */}
+      <section id="calculator" className="max-w-5xl mx-auto px-6 pt-24 pb-12 border-t" style={{ borderColor: 'rgba(212,175,55,0.15)' }}>
+        {/* Editorial header */}
+        <div className="flex items-center gap-2 mb-3">
+          <Calculator className="w-4 h-4 gold" />
+          <span className="text-xs uppercase tracking-widest gold" style={{ letterSpacing: '0.2em' }}>Mortgage Comparison Tool · For Prospective Buyers</span>
+        </div>
+        <div className="text-xs uppercase tracking-widest mb-5" style={{ letterSpacing: '0.18em', color: 'rgba(212,175,55,0.7)' }}>New Build vs. Resale</div>
+        <h2 className="font-display leading-[1.05] mb-6" style={{ fontWeight: 400, fontSize: 'clamp(36px, 6vw, 64px)' }}>
+          The numbers behind<br />
+          <span className="italic gold-gradient">your monthly payment.</span>
+        </h2>
+        <p className="text-base sm:text-lg mb-12 max-w-2xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
+          A side-by-side look at what a builder-buydown rate actually means in your monthly budget — and over the life of your loan.
+        </p>
+
+        {/* === LOAN SETUP === */}
+        <div className="rounded-sm border p-6 sm:p-8 mb-8" style={{ borderColor: 'rgba(212,175,55,0.2)', background: 'rgba(212,175,55,0.03)' }}>
+          <div className="text-xs uppercase tracking-widest mb-6 pb-4 border-b" style={{ letterSpacing: '0.2em', color: 'rgba(255,255,255,0.5)', borderColor: 'rgba(255,255,255,0.08)' }}>Loan Setup</div>
+
+          {/* Home price slider */}
+          <div className="mb-6">
+            <div className="flex items-baseline justify-between mb-3">
+              <label htmlFor="calc-price" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>Home price</label>
+              <span className="font-display text-2xl gold" style={{ fontWeight: 500 }}>{fmtMoney(calcPrice)}</span>
+            </div>
+            <input
+              id="calc-price"
+              type="range"
+              min="300000"
+              max="1500000"
+              step="25000"
+              value={calcPrice}
+              onChange={(e) => setCalcPrice(parseInt(e.target.value, 10))}
+              className="w-full calc-slider"
+            />
+            <div className="flex justify-between text-xs mt-1" style={{ color: 'rgba(255,255,255,0.4)' }}>
+              <span>$300K</span><span>$1.5M</span>
+            </div>
+          </div>
+
+          {/* Down payment slider */}
+          <div className="mb-6">
+            <div className="flex items-baseline justify-between mb-3">
+              <label htmlFor="calc-down" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>Down payment</label>
+              <span className="font-display text-2xl gold" style={{ fontWeight: 500 }}>
+                {calcDownPct}% · <span className="text-base" style={{ color: 'rgba(255,255,255,0.7)' }}>{fmtMoney(calcResults.downPayment)}</span>
+              </span>
+            </div>
+            <input
+              id="calc-down"
+              type="range"
+              min="3"
+              max="30"
+              step="1"
+              value={calcDownPct}
+              onChange={(e) => setCalcDownPct(parseInt(e.target.value, 10))}
+              className="w-full calc-slider"
+            />
+            <div className="flex justify-between text-xs mt-1" style={{ color: 'rgba(255,255,255,0.4)' }}>
+              <span>3%</span><span>30%</span>
+            </div>
+          </div>
+
+          {/* Loan term toggle */}
+          <div className="mb-6">
+            <label className="block text-sm mb-3" style={{ color: 'rgba(255,255,255,0.7)' }}>Loan term</label>
+            <div className="inline-flex rounded-sm overflow-hidden border" style={{ borderColor: 'rgba(212,175,55,0.3)' }}>
+              {[30, 15].map((yrs) => {
+                const active = calcLoanTerm === yrs;
+                return (
+                  <button
+                    key={yrs}
+                    type="button"
+                    onClick={() => setCalcLoanTerm(yrs)}
+                    className="px-6 py-2.5 text-sm font-semibold transition-colors"
+                    style={{
+                      background: active ? '#D4AF37' : 'transparent',
+                      color: active ? '#0A0A0B' : 'rgba(255,255,255,0.7)',
+                    }}
+                  >
+                    {yrs} years
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Property tax + Insurance + HOA — three small fields in a row */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-6">
+            <div>
+              <div className="flex items-baseline justify-between mb-2">
+                <label htmlFor="calc-tax" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>Property tax rate</label>
+                <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>% per year</span>
+              </div>
+              <input
+                id="calc-tax"
+                type="number"
+                step="0.1"
+                min="0"
+                max="10"
+                value={calcTaxRate}
+                onChange={(e) => setCalcTaxRate(e.target.value)}
+                className="w-full px-4 py-3 rounded-sm text-base"
+                style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.15)', color: '#FFFFFF', fontFamily: 'inherit' }}
+              />
+            </div>
+            <div>
+              <div className="flex items-baseline justify-between mb-2">
+                <label htmlFor="calc-ins" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>Home insurance</label>
+                <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>$ per year</span>
+              </div>
+              <input
+                id="calc-ins"
+                type="number"
+                step="100"
+                min="0"
+                value={calcInsurance}
+                onChange={(e) => setCalcInsurance(e.target.value)}
+                className="w-full px-4 py-3 rounded-sm text-base"
+                style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.15)', color: '#FFFFFF', fontFamily: 'inherit' }}
+              />
+            </div>
+            <div>
+              <div className="flex items-baseline justify-between mb-2">
+                <label htmlFor="calc-hoa" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>HOA fees</label>
+                <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>$ per month</span>
+              </div>
+              <input
+                id="calc-hoa"
+                type="number"
+                step="10"
+                min="0"
+                value={calcHOA}
+                onChange={(e) => setCalcHOA(e.target.value)}
+                className="w-full px-4 py-3 rounded-sm text-base"
+                style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.15)', color: '#FFFFFF', fontFamily: 'inherit' }}
+              />
+            </div>
+          </div>
+
+          {/* Two rate fields */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div>
+              <div className="flex items-baseline justify-between mb-2">
+                <label htmlFor="calc-rate-builder" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>New build rate</label>
+                <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>%</span>
+              </div>
+              <input
+                id="calc-rate-builder"
+                type="number"
+                step="0.125"
+                min="0"
+                max="15"
+                placeholder="e.g. 4.99"
+                value={calcRateBuilder}
+                onChange={(e) => setCalcRateBuilder(e.target.value)}
+                className="w-full px-4 py-3 rounded-sm text-base"
+                style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(212,175,55,0.4)', color: '#FFFFFF', fontFamily: 'inherit' }}
+              />
+            </div>
+            <div>
+              <div className="flex items-baseline justify-between mb-2">
+                <label htmlFor="calc-rate-existing" className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>Resale rate</label>
+                <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>%</span>
+              </div>
+              <input
+                id="calc-rate-existing"
+                type="number"
+                step="0.125"
+                min="0"
+                max="15"
+                placeholder="e.g. 6.50"
+                value={calcRateExisting}
+                onChange={(e) => setCalcRateExisting(e.target.value)}
+                className="w-full px-4 py-3 rounded-sm text-base"
+                style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.15)', color: '#FFFFFF', fontFamily: 'inherit' }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Hint when both rates not entered */}
+        {(!calcResults.builder || !calcResults.existing) && (
+          <div className="text-center py-12 px-6 rounded-sm" style={{ background: 'rgba(212,175,55,0.04)', border: '1px dashed rgba(212,175,55,0.25)' }}>
+            <Calculator className="w-8 h-8 gold mx-auto mb-3 opacity-50" />
+            <p className="text-base" style={{ color: 'rgba(255,255,255,0.65)' }}>Enter both interest rates above to see the full comparison.</p>
+          </div>
+        )}
+
+        {/* === RESULTS === */}
+        {calcResults.builder && calcResults.existing && (
+          <div className="fade-up">
+            {/* Top hero card: Monthly Savings */}
+            <div className="rounded-sm p-8 sm:p-10 mb-8 text-center" style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(212,175,55,0.05) 100%)', border: '1px solid rgba(212,175,55,0.5)' }}>
+              <div className="text-xs uppercase tracking-widest mb-4" style={{ letterSpacing: '0.2em', color: 'rgba(255,255,255,0.7)' }}>
+                Monthly savings with new build
+              </div>
+              <div className="font-display leading-none mb-3" style={{ fontWeight: 400, fontSize: 'clamp(48px, 9vw, 88px)' }}>
+                <span className="text-white">{fmtMoney(calcResults.monthlySavings)}</span>
+                <span className="italic gold-gradient">/mo</span>
+              </div>
+              <div className="text-sm sm:text-base" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                {fmtMoney(calcResults.savings30yr)} saved over the life of the loan
+              </div>
+            </div>
+
+            {/* Two breakdown cards */}
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              {/* New Build card */}
+              <div className="rounded-sm p-7 relative" style={{ background: 'rgba(212,175,55,0.06)', border: '1px solid rgba(212,175,55,0.4)' }}>
+                <div className="absolute -top-3 left-6 px-3 py-1 rounded-sm text-xs uppercase tracking-widest" style={{ letterSpacing: '0.18em', background: '#D4AF37', color: '#0A0A0B', fontWeight: 700 }}>
+                  Builder Rate
+                </div>
+                <div className="flex items-baseline justify-between mb-1 mt-2">
+                  <h3 className="font-display text-2xl" style={{ fontWeight: 400 }}>New build</h3>
+                  <span className="text-base gold font-semibold">{parseFloat(calcRateBuilder).toFixed(3)}%</span>
+                </div>
+                <div className="font-display gold mb-1 leading-none" style={{ fontWeight: 400, fontSize: 'clamp(40px, 6vw, 56px)' }}>
+                  {fmtMoney(calcResults.builder.pi)}
+                </div>
+                <div className="text-xs mb-5" style={{ color: 'rgba(255,255,255,0.55)' }}>Principal &amp; interest</div>
+
+                <div className="space-y-2 pt-4 border-t" style={{ borderColor: 'rgba(212,175,55,0.2)' }}>
+                  <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                    <span>Property tax</span><span>{fmtMoney(calcResults.taxMonthly)}</span>
+                  </div>
+                  <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                    <span>Home insurance</span><span>{fmtMoney(calcResults.insuranceMonthly)}</span>
+                  </div>
+                  {calcResults.pmiMonthly > 0 && (
+                    <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                      <span>Mortgage insurance (PMI)</span><span>{fmtMoney(calcResults.pmiMonthly)}</span>
+                    </div>
+                  )}
+                  {calcResults.hoaMonthly > 0 && (
+                    <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                      <span>HOA fees</span><span>{fmtMoney(calcResults.hoaMonthly)}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between text-base font-semibold pt-2">
+                    <span>Total monthly</span>
+                    <span className="gold">{fmtMoney(calcResults.builder.totalMonthly)}</span>
+                  </div>
+                  <div className="flex justify-between text-sm pt-2 mt-2 border-t border-dashed" style={{ borderColor: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.65)' }}>
+                    <span>Total interest paid</span><span>{fmtMoney(calcResults.builder.totalInterest)}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Resale card */}
+              <div className="rounded-sm p-7 relative" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div className="absolute -top-3 left-6 px-3 py-1 rounded-sm text-xs uppercase tracking-widest" style={{ letterSpacing: '0.18em', background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.85)', fontWeight: 600, border: '1px solid rgba(255,255,255,0.15)' }}>
+                  Market Rate
+                </div>
+                <div className="flex items-baseline justify-between mb-1 mt-2">
+                  <h3 className="font-display text-2xl" style={{ fontWeight: 400 }}>Resale</h3>
+                  <span className="text-base font-semibold" style={{ color: 'rgba(255,255,255,0.85)' }}>{parseFloat(calcRateExisting).toFixed(3)}%</span>
+                </div>
+                <div className="font-display mb-1 leading-none" style={{ fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: 'clamp(40px, 6vw, 56px)' }}>
+                  {fmtMoney(calcResults.existing.pi)}
+                </div>
+                <div className="text-xs mb-5" style={{ color: 'rgba(255,255,255,0.55)' }}>Principal &amp; interest</div>
+
+                <div className="space-y-2 pt-4 border-t" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
+                  <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                    <span>Property tax</span><span>{fmtMoney(calcResults.taxMonthly)}</span>
+                  </div>
+                  <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                    <span>Home insurance</span><span>{fmtMoney(calcResults.insuranceMonthly)}</span>
+                  </div>
+                  {calcResults.pmiMonthly > 0 && (
+                    <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                      <span>Mortgage insurance (PMI)</span><span>{fmtMoney(calcResults.pmiMonthly)}</span>
+                    </div>
+                  )}
+                  {calcResults.hoaMonthly > 0 && (
+                    <div className="flex justify-between text-sm py-1.5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.85)' }}>
+                      <span>HOA fees</span><span>{fmtMoney(calcResults.hoaMonthly)}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between text-base font-semibold pt-2">
+                    <span>Total monthly</span>
+                    <span style={{ color: 'rgba(255,255,255,0.95)' }}>{fmtMoney(calcResults.existing.totalMonthly)}</span>
+                  </div>
+                  <div className="flex justify-between text-sm pt-2 mt-2 border-t border-dashed" style={{ borderColor: 'rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.65)' }}>
+                    <span>Total interest paid</span><span>{fmtMoney(calcResults.existing.totalInterest)}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Cumulative Savings card */}
+            <div className="rounded-sm p-7 sm:p-8 mb-8" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(212,175,55,0.2)' }}>
+              <div className="text-xs uppercase tracking-widest mb-6 pb-4 border-b" style={{ letterSpacing: '0.2em', color: 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.08)' }}>
+                Cumulative savings on the new build
+              </div>
+              <div className="space-y-4">
+                {[
+                  { label: 'After 5 years', value: calcResults.savings5yr },
+                  { label: 'After 10 years', value: calcResults.savings10yr },
+                  { label: 'After 20 years', value: calcResults.savings20yr },
+                  { label: `Over the full ${calcLoanTerm}-year loan`, value: calcResults.savings30yr },
+                ].map((row, i, arr) => (
+                  <div key={i} className={`flex items-baseline justify-between ${i < arr.length - 1 ? 'pb-4 border-b' : ''}`} style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+                    <span className="text-base" style={{ color: 'rgba(255,255,255,0.85)' }}>{row.label}</span>
+                    <span className="font-display gold" style={{ fontWeight: 500, fontSize: 'clamp(24px, 3.5vw, 32px)' }}>{fmtMoney(row.value)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="rounded-sm p-7 sm:p-8 text-center" style={{ background: 'rgba(212,175,55,0.05)', border: '1px solid rgba(212,175,55,0.3)' }}>
+              <p className="text-base sm:text-lg mb-5 max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.85)' }}>
+                That's the real value of working with a builder right now. <span style={{ color: 'rgba(255,255,255,0.6)' }}>Want me to walk through your specific numbers and which builders are running the most aggressive buydowns this week?</span>
+              </p>
+              <a href={SCHEDULER_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-sm font-semibold text-sm transition-all hover:translate-y-[-1px]" style={{ background: '#D4AF37', color: '#0A0A0B' }}>
+                <Phone className="w-4 h-4" /> Schedule a 15 Min Call <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Disclaimer */}
+        <p className="mt-8 text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.4)' }}>
+          For illustrative purposes only. Estimates assume a fixed-rate conventional mortgage with PMI calculated at 0.5% of the loan amount annually when down payment is below 20%. Builder-buydown rates typically require financing through the builder's preferred lender. Builder-paid rate buydowns may be temporary (years 1-2) before stepping up to a permanent rate — ask the builder for the full buydown structure. Actual rates, taxes, insurance premiums, and fees vary by lender, location, and individual qualifications. Not a loan offer.
+        </p>
+      </section>
+      {/* === END MORTGAGE CALCULATOR === */}
 
       {/* Bottom CTA */}
       <section className="max-w-7xl mx-auto px-6 py-20 mt-12 border-t" style={{ borderColor: 'rgba(212,175,55,0.15)' }}>
